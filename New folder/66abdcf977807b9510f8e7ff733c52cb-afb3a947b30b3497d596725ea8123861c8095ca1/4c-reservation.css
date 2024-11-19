@@ -1,0 +1,92 @@
+/* (A) WHOLE PAGE */
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+body {
+  max-width: 500px;
+  padding: 20px;
+  margin: 0 auto;
+  background: #f5f5f5;
+}
+
+/* (B) SHARED */
+/* (B1) FORM SECTIONS */
+#sDate, #sRoom, #sContact {
+  padding: 20px;
+  border: 1px solid #e7e7e7;
+  background: #fff;
+}
+.hide { display: none !important; }
+
+/* (B2) COMMON ELEMENTS */
+.head, .step { text-align: center; }
+.head {
+  font-size: 30px;
+  font-weight: 500;
+  margin: 5px 0;
+  color: #e12323;
+}
+.step {
+  font-weight: 700;
+  font-size: 15px;
+  color: #ffa4a4;
+}
+
+/* (B3) FORM ELEMENTS */
+label, input[type=text], input[type=email], input[type=number], input[type=date] {
+  width: 100%;
+  display: block;
+}
+label {
+  font-size: 16px;
+  color: #a3a3a3;
+  padding: 20px 0 10px 0;
+}
+input { padding: 10px; }
+input[type=text], input[type=email], input[type=number], input[type=date] {
+  border: 0;
+  padding: 10px;
+  border: 1px solid #e5e5e5;
+  background: #f9f9f9;
+}
+.button {
+  margin-top: 30px;
+  padding: 10px 30px;
+  font-weight: 700;
+  border: 0;
+  color: #fff;
+  background: #b72626;
+  cursor: pointer;
+}
+
+/* (C) SELECT ROOM */
+.rHead { margin-bottom: 30px; }
+.rRow {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #e5e5e5;
+  background: #f9f9f9;
+  position: relative;
+  cursor: pointer;
+}
+.rRow::after {
+  content : "\27A4";
+  color: #c1c1c1;
+  display: block;
+  height: 100%;
+  position: absolute;
+  top: 0; right: 8px;
+  display: flex;
+  align-items: center;
+}
+.rBooked {
+  color: #8f8f8f;
+  background: #ededed;
+  cursor: not-allowed;
+}
+.rType { font-weight: 700; }
+.rStat {
+  font-size: 14px;
+  margin-top: 5px;
+}
